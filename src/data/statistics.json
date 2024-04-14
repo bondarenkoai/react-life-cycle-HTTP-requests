@@ -1,0 +1,33 @@
+[
+    [
+        { "id": "1", "label": ".txt", "percentage": 19 },
+        { "id": "2", "label": ".jpg", "percentage": 31 },
+        { "id": "3", "label": ".xlsx", "percentage": 13 },
+        { "id": "4", "label": ".png", "percentage": 37 }
+    ],
+
+    [
+        { "id": "21", "label": ".txt", "percentage": 14 },
+        { "id": "22", "label": ".jpg", "percentage": 31 },
+        { "id": "23", "label": ".xlsx", "percentage": 10 },
+        { "id": "24", "label": ".png", "percentage": 39 },
+        { "id": "25", "label": ".html", "percentage": 6 }
+    ],
+    [
+        { "id": "31", "label": ".css", "percentage": 15 },
+        { "id": "32", "label": ".js", "percentage": 28 },
+        { "id": "33", "label": ".json", "percentage": 12 },
+        { "id": "34", "label": ".pptx", "percentage": 11 },
+        { "id": "35", "label": ".gif", "percentage": 13 },
+        { "id": "36", "label": ".avi", "percentage": 21 }
+    ],
+    [
+        { "id": "41", "label": ".xls", "percentage": 15 },
+        { "id": "42", "label": ".mp4", "percentage": 19 },
+        { "id": "43", "label": ".svg", "percentage": 9 },
+        { "id": "44", "label": ".doc", "percentage": 24 },
+        { "id": "45", "label": ".xml", "percentage": 9 },
+        { "id": "46", "label": ".txt", "percentage": 4 },
+        { "id": "47", "label": ".png", "percentage": 20 }
+    ]
+]

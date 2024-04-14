@@ -1,0 +1,32 @@
+[
+    {
+        "avatar": "https://img.freepik.com/free-psd/3d-rendering-boy-avatar-emoji_23-2150603408.jpg",
+        "name": "Alex Johnson",
+        "isOnline": true,
+        "id": 1812
+    },
+    {
+        "avatar": "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg",
+        "name": "Emma Williams",
+        "isOnline": false,
+        "id": 1137
+    },
+    {
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611737.jpg",
+        "name": "Ethan Anderson",
+        "isOnline": true,
+        "id": 1213
+    },
+    {
+        "avatar": "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671145.jpg",
+        "name": "Olivia Smith",
+        "isOnline": true,
+        "id": 1714
+    },
+    {
+        "avatar": "https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611762.jpg",
+        "name": "Noah Davis",
+        "isOnline": false,
+        "id": 1284
+    }
+]

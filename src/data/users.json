@@ -1,0 +1,35 @@
+[
+    {
+        "username": "Alice Johnson",
+        "tag": "alice.j",
+        "location": "New York, USA",
+        "avatar": "https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg",
+        "stats": {
+            "followers": 7892,
+            "views": 6215,
+            "likes": 2456
+        }
+    },
+    {
+        "username": "Sophia Lee",
+        "tag": "sophia.l",
+        "location": "Tokyo, Japan",
+        "avatar": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses-green-hair_23-2149436201.jpg",
+        "stats": {
+            "followers": 5210,
+            "views": 4378,
+            "likes": 1923
+        }
+    },
+    {
+        "username": "Elena Martinez",
+        "tag": "elena.m",
+        "location": "Barcelona, Spain",
+        "avatar": "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436178.jpg",
+        "stats": {
+            "followers": 4675,
+            "views": 3986,
+            "likes": 1502
+        }
+    }
+]
