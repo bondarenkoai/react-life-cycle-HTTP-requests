@@ -2,6 +2,7 @@
     "name": "3-react-life-cycle-http-requests",
     "private": true,
     "version": "0.0.0",
+    "homepage": "https://bondarenkoai.github.io/react-life-cycle-HTTP-requests/",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -12,6 +13,18 @@
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     },
     "devDependencies": {
         "@emotion/react": "^11.11.4",

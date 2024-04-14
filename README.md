@@ -26,8 +26,30 @@ Take your solution from the previous homework assignment and add storage of phon
 -   Step 1:  
     Contacts are stored in local storage when adding and removing contacts.
 
+```
+componentDidUpdate(prevProps, prevState) {
+        if (this.state.contacts !== prevState.contacts) {
+            console.log("update contacts");
+            localStorage.setItem(
+                "contacts",
+                JSON.stringify(this.state.contacts)
+            );
+        }
+    }
+```
+
 -   Step 2:  
     Upon application load, contacts, if any, are read from local storage and stored in the state.
+
+```
+componentDidMount() {
+        const storedData = JSON.parse(localStorage.getItem("contacts"));
+
+        if (storedData) {
+            this.setState({ contacts: storedData });
+        }
+    }
+```
 
 ### ✅ Image Search:
 
