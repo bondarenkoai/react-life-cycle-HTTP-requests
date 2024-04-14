@@ -1,5 +1,5 @@
-import React from 'react';
-import { InputName, TextP } from '../FormFormik.styled';
+import React from "react";
+import { InputName, TextP } from "../Phonebook.styled";
 
 export const Filter = ({ contacts, onChange }) => (
     <label>

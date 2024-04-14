@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const ruler = 16;
-const colorShadow = '#BDC1C6';
-const colorWhite = '#FFFFFF';
-const colorBg = '#F7F8FA';
-const colorRed = '#FF4E61';
+const colorShadow = "#BDC1C6";
+const colorWhite = "#FFFFFF";
+const colorBg = "#F7F8FA";
+const colorRed = "#FF4E61";
 
 export const PhonebookContainer = styled.div`
     width: ${ruler * 24}px;
@@ -31,8 +31,8 @@ export const TextP = styled.p`
     font-weight: bold;
     color: ${colorShadow};
     text-shadow: 1px 1px 1px ${colorWhite};
-    color: ${props => (props.error ? 'red' : colorShadow)};
-    margin-top: ${props => (props.error ? '10px' : 0)};
+    color: ${(props) => (props.error ? "red" : colorShadow)};
+    margin-top: ${(props) => (props.error ? "10px" : 0)};
 `;
 
 export const Label = styled.label`
@@ -63,13 +63,15 @@ export const Button = styled.button`
     }
 
     &:active {
-        box-shadow: inset 1px 1px 2px ${colorShadow}, inset -1px -1px 2px ${colorWhite};
+        box-shadow: inset 1px 1px 2px ${colorShadow},
+            inset -1px -1px 2px ${colorWhite};
     }
 `;
 
 export const InputName = styled.input`
     margin-right: ${ruler / 2}px;
-    box-shadow: inset 2px 2px 5px ${colorShadow}, inset -5px -5px 10px ${colorWhite};
+    box-shadow: inset 2px 2px 5px ${colorShadow},
+        inset -5px -5px 10px ${colorWhite};
     width: 60%;
     padding: ${ruler}px;
     font-size: ${ruler}px;
@@ -81,7 +83,8 @@ export const InputName = styled.input`
     transition: all 0.2s ease-in-out;
 
     &:focus {
-        box-shadow: inset 1px 1px 2px ${colorShadow}, inset -1px -1px 2px ${colorWhite};
+        box-shadow: inset 1px 1px 2px ${colorShadow},
+            inset -1px -1px 2px ${colorWhite};
     }
 `;
 
@@ -119,6 +122,7 @@ export const ButtonList = styled.button`
     }
 
     &:focus {
-        box-shadow: inset 2px 2px 5px ${colorShadow}, inset -5px -5px 10px ${colorWhite};
+        box-shadow: inset 2px 2px 5px ${colorShadow},
+            inset -5px -5px 10px ${colorWhite};
     }
 `;
