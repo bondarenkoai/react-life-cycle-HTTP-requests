@@ -7,7 +7,7 @@ const colorBg = "#F7F8FA";
 const colorRed = "#FF4E61";
 
 export const PhonebookContainer = styled.div`
-    width: ${ruler * 24}px;
+    width: ${ruler * 26}px;
     margin: 30px auto;
     padding: ${ruler * 2}px;
     background: ${colorBg};
