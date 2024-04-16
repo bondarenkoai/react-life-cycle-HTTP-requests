@@ -2,14 +2,16 @@ import PropTypes from 'prop-types';
 import { List } from './ImageGallery.stytled';
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
 
-export const ImageGallery = ({ src }) => {
+export const ImageGallery = ({ options }) => {
     return (
         <List>
-            <ImageGalleryItem src={src} />
+            {options.map(({ id, webformatURL }) => (
+                <ImageGalleryItem key={id} src={webformatURL} />
+            ))}
         </List>
     );
 };
 
 ImageGallery.propTypes = {
-    src: PropTypes.string.isRequired,
+    options: PropTypes.array.isRequired,
 };
