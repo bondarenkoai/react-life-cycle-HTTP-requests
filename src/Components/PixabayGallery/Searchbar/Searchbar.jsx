@@ -22,9 +22,12 @@ export const Searchbar = ({ setSearch }) => {
         console.log(values);
         console.log(values.search);
 
-        setSearch(values.search);
+        {
+            values.search && setSearch(values.search);
+        }
         resetForm();
     };
+
     return (
         <SearchbarContainer>
             <Formik initialValues={initialValues} validationSchema={schema} onSubmit={onSubmit}>
