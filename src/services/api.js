@@ -13,7 +13,7 @@ axios.defaults.params = {
 export const getImages = async (searchValues, page) => {
     try {
         // Simulate a delay of 2 seconds
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         const response = await axios.get(`/?q=${searchValues}&page=${page}`);
 

@@ -18,27 +18,41 @@ export class PixabayGallery extends Component {
         error: '',
     };
 
-    searchImages = async (searchValues, resetImages = true) => {
-        if (resetImages) {
-            this.setState({ images: [], page: 1 });
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.search !== prevState.search) {
+            this.searchImages(this.state.search);
         }
+    }
 
-        this.setState({ loading: true });
+    handleSubmit = searchValues => {
+        this.setState({
+            search: searchValues,
+            images: [],
+            currentPage: 1,
+        });
+    };
 
-        const newImages = await API.getImages(searchValues, this.state.page);
+    searchImages = async searchValues => {
+        try {
+            await this.setState({ loading: true, error: '' });
 
-        console.log(newImages);
+            const newImages = await API.getImages(searchValues, this.state.page);
 
-        if (newImages.total !== 0) {
-            this.setState(prevState => ({
-                search: searchValues,
-                images: [...prevState.images, ...newImages.hits],
-            }));
-        } else {
-            this.setState({ error: true });
+            console.log(newImages);
+
+            if (newImages.total !== 0) {
+                await this.setState(prevState => ({
+                    search: searchValues,
+                    images: [...prevState.images, ...newImages.hits],
+                }));
+            } else {
+                await this.setState({ error: 'Sorry, no images found.' });
+            }
+        } catch (error) {
+            await this.setState({ error: 'Something went wrong!' });
+        } finally {
+            await this.setState({ loading: false });
         }
-
-        this.setState({ loading: false });
     };
 
     loadMoreImages = () => {
@@ -58,17 +72,13 @@ export class PixabayGallery extends Component {
 
         return (
             <PixabayGalleryContainer>
-                <Searchbar setSearch={this.searchImages} />
+                <Searchbar setSearch={this.handleSubmit} />
                 {images && <ImageGallery options={images} />}
                 {loading && <Loader />}
                 {!loading && images.length > 0 && (
                     <Button type="button" text="Load more" onClick={this.loadMoreImages} />
                 )}
-                {error && (
-                    <div>
-                        {error} <div>Sorry not img...</div>
-                    </div>
-                )}
+                {error && <div>{error}</div>}
                 {/* <Modal /> */}
             </PixabayGalleryContainer>
         );
