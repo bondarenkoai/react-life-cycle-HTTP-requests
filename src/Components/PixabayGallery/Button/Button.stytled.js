@@ -4,7 +4,7 @@ export const ButtonStytled = styled.button`
     width: 130px;
     height: 50px;
     padding: 12px 24px;
-    margin: 10px;
+    margin: 0 auto;
     font-size: 16px;
     color: white;
     background: linear-gradient(#212121, #212121) padding-box,

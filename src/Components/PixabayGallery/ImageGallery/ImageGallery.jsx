@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import { List } from './ImageGallery.stytled';
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
-import { Button } from '../Button/Button';
 
-export const ImageGallery = ({ options, loadMore }) => {
+export const ImageGallery = ({ options }) => {
     const uniqueOptions = [];
     const duplicatedOptions = [];
 
@@ -15,19 +14,17 @@ export const ImageGallery = ({ options, loadMore }) => {
         }
     });
 
-    console.log('Duplicated options:', duplicatedOptions);
-
     return (
-        <List>
-            {uniqueOptions.map(({ id, webformatURL }) => (
-                <ImageGalleryItem key={id} src={webformatURL} />
-            ))}
-            <Button type="button" text="Load more" onClick={loadMore} />
-        </List>
+        <>
+            <List>
+                {uniqueOptions.map(({ id, webformatURL }) => (
+                    <ImageGalleryItem key={id} src={webformatURL} />
+                ))}
+            </List>
+        </>
     );
 };
 
 ImageGallery.propTypes = {
     options: PropTypes.array.isRequired,
-    loadMore: PropTypes.func.isRequired,
 };
