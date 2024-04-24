@@ -14,4 +14,5 @@ export const ImageGallery = ({ options }) => {
 
 ImageGallery.propTypes = {
     options: PropTypes.array.isRequired,
+    loadMore: PropTypes.func.isRequired,
 };

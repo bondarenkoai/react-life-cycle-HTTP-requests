@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const ButtonStytled = styled.button`
-    width: 120px;
+    width: 130px;
     padding: 12px 24px;
     margin: 10px;
     font-size: 16px;
@@ -16,7 +16,6 @@ export const ButtonStytled = styled.button`
     &:hover {
         transform: scale(1.05);
         background: linear-gradient(#5d5d5d, #212121) padding-box,
-            linear-gradient(145deg, transparent 35%, #ffa000, #40c9ff)
-                border-box;
+            linear-gradient(145deg, transparent 35%, #ffa000, #40c9ff) border-box;
     }
 `;

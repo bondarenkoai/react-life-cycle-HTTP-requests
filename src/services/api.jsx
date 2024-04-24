@@ -10,12 +10,12 @@ axios.defaults.params = {
     key: API_KEY,
     image_type: 'photo',
     orientation: 'horizontal',
-    per_page: 12,
+    per_page: 4,
 };
 
-export const getImages = async searchValues => {
+export const getImages = async (searchValues, page) => {
     try {
-        const response = await axios.get(`/?q=${searchValues}&page=1`);
+        const response = await axios.get(`/?q=${searchValues}&page=${page}`);
         return response.data;
     } catch (error) {
         console.error(error);
