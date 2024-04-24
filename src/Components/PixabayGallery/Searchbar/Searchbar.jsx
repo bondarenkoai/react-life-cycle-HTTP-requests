@@ -46,7 +46,7 @@ export const Searchbar = ({ setSearch }) => {
                             {errorMessage => <TextP error={!!errorMessage}>{errorMessage}</TextP>}
                         </ErrorMessage>
                     </Label>
-                    <Button value="Search" type="submit" />
+                    <Button text="Search" type="submit" onClick={() => {}} />
                 </Form>
             </Formik>
         </SearchbarContainer>

@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
 import { ButtonStytled } from './Button.stytled';
 
-export const Button = ({ value, type }) => {
-    return <ButtonStytled type={type}>{value}</ButtonStytled>;
+export const Button = ({ text, type, onClick }) => {
+    return (
+        <ButtonStytled type={type} onClick={onClick}>
+            {text}
+        </ButtonStytled>
+    );
 };
 
 Button.propTypes = {
     type: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
 };

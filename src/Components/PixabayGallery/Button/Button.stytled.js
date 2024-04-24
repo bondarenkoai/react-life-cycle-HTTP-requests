@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const ButtonStytled = styled.button`
     width: 130px;
+    height: 50px;
     padding: 12px 24px;
     margin: 10px;
     font-size: 16px;
