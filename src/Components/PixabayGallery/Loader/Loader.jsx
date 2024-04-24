@@ -1,10 +1,10 @@
-import { SvgContainer } from './Loader.stytled';
+import { LoadWrapper } from './Loader.stytled';
 import circle from './circle.svg';
 
 export const Loader = () => {
     return (
-        <SvgContainer>
+        <LoadWrapper>
             <img src={circle} alt="Circle SVG" />
-        </SvgContainer>
+        </LoadWrapper>
     );
 };

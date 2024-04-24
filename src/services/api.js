@@ -12,16 +12,10 @@ axios.defaults.params = {
 
 export const getImages = async (searchValues, page) => {
     try {
-        // Simulate a delay of 2 seconds
-        await new Promise(resolve => setTimeout(resolve, 1000));
-
+        // Simulate a delay of 1,5 seconds
+        await new Promise(resolve => setTimeout(resolve, 1500));
         const response = await axios.get(`/?q=${searchValues}&page=${page}`);
-
-        if (response.status === 200) {
-            return response.data;
-        } else {
-            throw new Error(`Not found image by request ${searchValues}`);
-        }
+        return response.data;
     } catch (error) {
         console.error(error);
         return error;

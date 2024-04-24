@@ -61,7 +61,7 @@ export class PixabayGallery extends Component {
                 page: prevState.page + 1,
             }),
             () => {
-                this.searchImages(this.state.search, false);
+                this.searchImages(this.state.search);
             }
         );
     };
